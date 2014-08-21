@@ -1,0 +1,202 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container" role="main" style="margin-top: 60px;">
+  <div class="row">
+    <div class="col-md-2">
+      <div class=" affix">
+        <div class="row">
+          <div>
+            <img src="/static/img/profile.jpg" class="img-thumbnail" style="max-width: 200px;"/>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <ul class="nav nav-stacked">
+              <li class="active">
+                <a data-toggle="collapse" data-parent="#accordion" href="#panel-1">About me</a>
+              </li>
+              <li>
+                <a data-toggle="collapse" data-parent="#accordion" href="#panel-2">Education</a>
+              </li>
+              <li>
+                <a data-toggle="collapse" data-parent="#accordion" href="#panel-3">Experience</a>
+              </li>
+              <li>
+                <a data-toggle="collapse" data-parent="#accordion" href="#panel-4">Skills</a>
+              </li>
+              <li>
+                <a data-toggle="collapse" data-parent="#accordion" href="#panel-5">Achievements</a>
+              </li>
+              <li>
+                <a data-toggle="collapse" data-parent="#accordion" href="#panel-6">Activities</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-8" id="accordion" style="padding-left: 30px;">
+      <div class="row page-header" style="border-color: #428BCA;">
+        <a name="panel-1"></a><Strong>About me</Strong>
+      </div>
+      <div class="row pull-right" style="margin-top: -30px;" data-toggle="collapse" data-target="panel-1">
+        <a data-toggle="collapse" data-parent="#accordion" href="#panel-1"><span class="caret"></span></a>
+      </div>
+      <div class="panel-collapse collapse in row" id="panel-1">
+        I am pursuing Master of Science in Computer Science & Engineering at the Texas A&M University.
+        I actively seek challenging assignments to test my skills and further boost my experience.
+        I believe that I am honest at all times and I am serious to my work and commitments.
+      </div>
+
+      <div class="row page-header" style="border-color: #428BCA;">
+        <a name="panel-2"></a><strong>Education</strong>
+      </div>
+      <div class="row pull-right" style="margin-top: -30px;">
+        <a data-toggle="collapse" data-parent="#accordion" href="#panel-2"><span class="caret"></span></a>
+      </div>
+      <div class="panel-collapse collapse row" id="panel-2">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <p>
+              <strong>MS Computer Science & Engineering<span class="pull-right">Expected Graduation: May, 2015</span><br>
+              Texas A&M University, College Station, Texas<br></strong>
+              <strong>Courses taken:</strong><br>
+              <em>Machine Learning, Algorithms, Operating Systems, Software Engineering, Intelligent User Interfaces, Information Retrieval.</em>
+              <strong>GPA – 3.66/4</strong>
+            </p>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <p>
+              <strong>B.Tech. Information Technology<span class="pull-right">May, 2010</span><br>
+              National Institute of Technology, Bhopal, India<br>
+              GPA – 8.58/10</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row page-header" style="border-color: #428BCA;">
+        <a name="panel-3"></a><Strong>Experience</Strong>
+      </div>
+      <div class="row pull-right" style="margin-top: -30px;" data-toggle="collapse" data-target="panel-3">
+        <a data-toggle="collapse" data-parent="#accordion" href="#panel-3"><span class="caret"></span></a>
+      </div>
+      <div class="panel-collapse collapse row" id="panel-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <p>
+              <Strong><em>ebay inc</em><span class="pull-right">June, 2014 – August, 2014</span><br></Strong>
+              Interned in the <strong>GCS (Compute Systems Ops)</strong> team.<br>
+              Some of my accomplishments were:<br>
+              <ul class="list-group">
+                <li class="list-group-item">Developed a Django based monitoring and reporting tool for the OpenStack infrastructure.</li>
+                <li class="list-group-item">Integrated PingFederate SSO with internal website for troubleshooting OpenStack infrastructure.</li>
+                <li class="list-group-item">Developed and upgraded the UI for various modules for the website.</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <p>
+              <Strong><em>Texas A&M University</em><span class="pull-right">August, 2013 – May, 2015  </span><br></Strong>
+              <ul class="list-group">
+                <li class="list-group-item">Developed a Hobby Selector as an intelligent user interface incorporating a variation of k-NN algorithm on Google AppEngine with Python, HTML, JS and closure tools.</li>
+                <li class="list-group-item">Developed a Leave Application System as part of the Software Engineering curriculum project incorporating Factory and Post/Redirect/Get design patterns and Model-View-Controller architecture while following software engineering methods on a LAMP framework.</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <p>
+              <Strong><em>Indecomm Global Services</em><span class="pull-right">August, 2010 – April, 2013</span><br></Strong>
+              Associate Consultant on the team working for my employer’s client Google Inc.<br>
+              Some of my accomplishments were:<br>
+              <ul class="list-group">
+                <li class="list-group-item">Developed various djangi based web tools used by different teams in Google.</li>
+                <li class="list-group-item">Integrated GMAIL backend, for sending/receiving of emails and alerts, with Google Workflow 2 – an internal highly scalable web based process management system. </li>
+                <li class="list-group-item">Wrote various APIs in python and exposed them though web RPCs.</li>
+                <li class="list-group-item">Wrote and deployed cron scripts on Google’s cloud infrastructure that read and wrote and processed data on different datacentres.</li>
+                <li class="list-group-item">Developed modules for Google’s customer support website and improved its efficiency.</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <p>
+              <Strong><em>Maulana Azad National Institute of Technology</em><span class="pull-right">July, 2006 – May, 2010</span><br></Strong>
+              <ul class="list-group">
+                <li class="list-group-item">Implemented a greedy algorithm for solving the Travelling Salesman Problem on a distributed grid.</li>
+                <li class="list-group-item">Implemented C4.5, Naïve Bayes & MLR and incorporated them in a Meta Decision Tree.</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row page-header" style="border-color: #428BCA;">
+        <a name="panel-4"></a><strong>Skills</strong>
+      </div>
+      <div class="row pull-right" style="margin-top: -30px;" data-toggle="collapse" data-target="panel-4">
+        <a data-toggle="collapse" data-parent="#accordion" href="#panel-4"><span class="caret"></span></a>
+      </div>
+      <div class="panel-collapse collapse row" id="panel-4">
+        <div class="panel panel-default">
+          <div class="panel-heading">Programming languages</div>
+          <div class="panel-body">
+            <strong>Python, C++, PHP, JavaScript, SQL, C, JAVA</strong>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">Libraries</div>
+          <div class="panel-body">
+            <strong>JQuery, Django, Bootstrap, HighCharts, Flask, TWIG</strong>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">Others</div>
+          <div class="panel-body">
+            <strong>MySQL, OpenStack, Nagios, Graphite, GitHub, Pycharm, Google AppEngine</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="row page-header" style="border-color: #428BCA;">
+        <a name="panel-5"></a><strong>Achievements</strong>
+      </div>
+      <div class="row pull-right" style="margin-top: -30px;" data-toggle="collapse" data-target="panel-5">
+        <a data-toggle="collapse" data-parent="#accordion" href="#panel-5"><span class="caret"></span></a>
+      </div>
+      <div class="panel-collapse collapse" id="panel-5">
+        <ul class="list-group">
+          <li class="list-group-item">4 Best Performance Awards in Q4 2010, Q3 2011, Q4 2011 and Q2 2012 at Indecomm.</li>
+          <li class="list-group-item">Certificate for scoring above 75% in XII standard.</li>
+        </ul>
+      </div>
+
+      <div class="row page-header" style="border-color: #428BCA;">
+        <a name="panel-6"></a><strong>Activities</strong>
+      </div>
+      <div class="row pull-right" style="margin-top: -30px;" data-toggle="collapse" data-target="panel-6">
+        <a data-toggle="collapse" data-parent="#accordion" href="#panel-6"><span class="caret"></span></a>
+      </div>
+      <div class="panel-collapse collapse row" id="panel-6">
+        <ul class="list-group">
+          <li class="list-group-item">Runners up in the intra college chess tournament and selection into the college team in 2008.</li>
+          <li class="list-group-item">Played in the inter-department soccer.</li>
+          <li class="list-group-item">Volunteer at Comic Con Delhi, India, 2013.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+    </div>
+  </div>
+</div>
+{% endblock %}
